@@ -13,6 +13,7 @@ pytest-cov = "*"
 gunicorn = "*"
 heroku = "*"
 pytest-django = "*"
+python-decouple = "*"
 
 [requires]
 python_version = "3.8"
