@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Collectfast',
+    'collectfast',
     'pypro.base',
 ]
 
@@ -142,6 +142,9 @@ if AWS_ACCESS_KEY_ID:
 
     COLLECTFAST_ENABLED = True
 
+    STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+    COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
+    
     AWS_DEFAULT_ACL = 'private'
 
     # static assets
