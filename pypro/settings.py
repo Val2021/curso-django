@@ -17,6 +17,7 @@ import os
 import dj_database_url
 from decouple import config, Csv
 from functools import partial
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
@@ -126,7 +127,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
 
 # STORAGE CONFIGURATION IN S3 AWS
-#---------------------------------------------------------
+# ---------------------------------------------------------
 if AWS_ACCESS_KEY_ID:
     AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
     AWS_STORAGE_BUCKET_NAME = config('AWS_STORAGE_BUCKET_NAME')
@@ -151,4 +152,5 @@ if AWS_ACCESS_KEY_ID:
     MEDIA_URL = f'//s3.amazonaws.com/{AWS_STORAGE_BUCKET_NAME}/{DEFAULT_S3_PATH}/'
 
     INSTALLED_APPS.append('s3_folder_storage')
+
     INSTALLED_APPS.append('storages')
