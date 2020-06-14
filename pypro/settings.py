@@ -149,7 +149,6 @@ if AWS_ACCESS_KEY_ID:
     COLLECTFAST_ENABLED = True
 
 
-
     # static assets
     STATICFILES_STORAGE = 's3_folder_storage.s3.StaticStorage'
     STATIC_S3_PATH = 'static'
