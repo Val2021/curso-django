@@ -144,10 +144,11 @@ if AWS_ACCESS_KEY_ID:
     AWS_AUTO_CREATE_BUCKET = False
     AWS_QUERYSTRING_AUTH = True
     AWS_S3_CUSTOM_DOMAIN = None
+    AWS_DEFAULT_ACL = 'private'
 
     COLLECTFAST_ENABLED = True
 
-    AWS_DEFAULT_ACL = 'private'
+
 
     # static assets
     STATICFILES_STORAGE = 's3_folder_storage.s3.StaticStorage'
