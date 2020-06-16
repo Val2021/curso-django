@@ -17,6 +17,7 @@ dj-database-url = "*"
 django-s3-folder-storage = "*"
 collectfast = "*"
 psycopg2-binary = "*"
+django-debug-toolbar = "*"
 
 [requires]
 python_version = "3.8"
