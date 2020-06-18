@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Python Pro</title>
-
     <meta name="description" content="Página do curso Python Pro">
     <meta name="author" content="Renzo Nucciteli">
+    <link rel="icon" type="image/png" href= "{% static 'img/favicon.png'%}"/>
 
     <link href= "{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href= "{% static 'css/style.css' %}" rel="stylesheet">
@@ -22,7 +22,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="{% url 'home' %}">Python Pro</a>
+  <a class="navbar-brand" href="{% url 'base:home' %}">Python Pro</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -33,7 +33,7 @@
   </div>
 </nav>
 
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col-md-12">
 
@@ -87,30 +87,30 @@
             </nav>
             <div class="jumbotron">
                 <h2>
-                    Hello, world!
+                    Curso de Python com Luciano Ramalho
                 </h2>
                 <p>
-                    This is a template for a simple marketing or informational website. It includes a large callout
-                    called the hero unit and three supporting pieces of content. Use it as a starting point to create
-                    something more unique.
-                </p>
-                <p>
-                    <a class="btn btn-primary btn-large" href="#">Learn more</a>
+                    Confira em breve mais informações sobre o autor do livro:
+                    <a href="https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/"
+                       target="_blank">Python Fluent</a>
                 </p>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
                         <h5 class="card-header">
-                            Card title
+                            Mais detalhes sobre o instrutor
                         </h5>
                         <div class="card-body">
                             <p class="card-text">
-                                Card content
+                                <img src="{% static 'img/ramalho.png' %}" alt="Foto de Luciano Ramalho" class="img-thumbnail float-left mr-3"/>
+                                Luciano Ramalho é programador Python desde 1998,
+                                Fellow da Python Software Foundation; é sócio e professor na
+                                empresa de treinamento <a href="https://www.python.pro.br">Python Pro</a>
+                                e cofundador do Garoa Hacker Clube, o primeiro hackerspace do Brasil.
+                                Tem liderado equipes de desenvolvimento de software e ministrado cursos
+                                sobre Python em empresas de mídia, bancos e para o Governo Federal.
                             </p>
-                        </div>
-                        <div class="card-footer">
-                            Card footer
                         </div>
                     </div>
                 </div>
@@ -119,5 +119,28 @@
     </div>
 </div>
 
+<footer class="main-footer mt-5 pt-4 ">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Entre em contato</h3>
+                <address>
+                    + 55 12 997-441-854
+                    <br/>
+                    <a href="mailto:ramalho@python.pro.br">ramalho@python.pro.br</a>
+                </address>
+            </div>
+        </div>
+    </div>
+    <div class="rights pb-4">
+        <div class="container">
+             <div class="row">
+                   <div class="col">
+                       {% now 'Y' %} Python Pro. Todos os direitos reservados.
+                   </div>
+             </div>
+        </div>
+    </div>
+    </footer>
 </body>
 </html>
