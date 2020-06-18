@@ -19,6 +19,7 @@ collectfast = "*"
 psycopg2-binary = "*"
 django-debug-toolbar = "*"
 sentry-sdk = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.8"
