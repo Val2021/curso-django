@@ -16,7 +16,7 @@ def test_status_code(resp):
 @pytest.mark.parametrize(
     'titulo',
     [
-        'Video Aperitivo:Motivação',
+        'Video Aperitivo : Motivação',
         'Instalação Windows'
     ]
 )
