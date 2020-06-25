@@ -3,7 +3,7 @@ from django.shortcuts import render, get_object_or_404
 from pypro.aperitivos.models import Video
 
 videos = [
-    Video(slug='motivacao', titulo='Video Aperitivo:Motivação', vimeo_id='431002343'),
+    Video(slug='motivacao', titulo='Video Aperitivo : Motivação', vimeo_id='431002343'),
     Video(slug='instalacao-windows', titulo='Instalação Windows', vimeo_id='251497668'),
 ]
 
