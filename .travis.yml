@@ -1,11 +1,19 @@
 language: python
+dist: xenial
+sudo: true
+
 python:
   - 3.8
 
 services:
   postgresql
 addons:
-  postgresql: '12'
+  postgresql: '9.5'
+
+env:
+  global:
+  - PIPENV_VENV_IN_PROJECT=1
+  - PIPENV_IGNORE_VIRTUALENVS=1
 
 install:
   - pip install -q pipenv codecov
@@ -18,5 +26,6 @@ before_script:
 script:
   - pipenv run flake8
   - pipenv run pytest --cov=pypro
+
 after_success:
   - pipenv run codecov
