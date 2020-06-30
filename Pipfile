@@ -22,6 +22,8 @@ django-debug-toolbar = "*"
 sentry-sdk = "*"
 pytest = "*"
 django-ordered-model = "*"
+ipython = "*"
+django-extensions = "*"
 
 [requires]
 python_version = "3.8"
