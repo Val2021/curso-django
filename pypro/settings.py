@@ -170,8 +170,8 @@ if AWS_ACCESS_KEY_ID:
     AWS_S3_CUSTOM_DOMAIN = None
     AWS_DEFAULT_ACL = None
 
-    COLLECTFAST_ENABLED = True
     COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
+    COLLECTFAST_ENABLED = True
 
     AWS_DEFAULT_ACL = 'private'
 
