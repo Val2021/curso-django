@@ -12,6 +12,7 @@ class Modulo(OrderedModel):
     class Meta(OrderedModel.Meta):
         pass
 
+
     def __str__(self):
         return self.titulo
 
